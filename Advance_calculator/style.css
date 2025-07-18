@@ -1,1 +1,176 @@
+/* Base Reset & Font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1c1c1c, #ff0000);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+  transition: background 0.3s ease;
+}
 
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Dark Mode Background */
+body.dark {
+  background: linear-gradient(135deg, #000000, #550000);
+}
+
+/* Calculator Wrapper */
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  width: 320px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+body.dark .calculator {
+  background: #1a1a1a;
+  box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+
+/* Display */
+.display {
+  width: calc(100% - 24px); /* Matches calculator padding (20px + 2*padding inside display) */
+  height: 60px;
+  font-size: 26px;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  background-color: #5555;
+  color: #000;
+  margin: 0 auto 15px auto; /* Centers display */
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.1);
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  box-sizing: border-box;
+}
+
+
+
+body.dark .display {
+  background-color: #222;
+  color: #0ff;
+}
+
+/* Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* General Button Style */
+.btn {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #d3d3d3; 
+  color: #222;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #c0c0c0; 
+}
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Button Styling */
+body.dark .btn {
+  background-color: #444; 
+  color: #fff;
+}
+body.dark .btn:hover {
+  background-color: #555;
+}
+
+/* Special Buttons */
+.clear {
+  background-color: #ff6666; 
+  color: white;
+}
+.clear:hover {
+  background-color: #ff4d4d;
+}
+body.dark .clear {
+  background-color: #ff5c5c;
+}
+
+/*Equal Buttons*/
+.equal {
+  grid-column: span 2;
+  background-color: #90caf9; 
+  color: #000;
+}
+.equal:hover {
+  background-color: #64b5f6;
+}
+
+/*Backspace Buttons*/
+#backspace {
+  background-color: #a5d6a7; /* Mint green */
+  color: #000;
+}
+#backspace:hover {
+  background-color: #81c784;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
