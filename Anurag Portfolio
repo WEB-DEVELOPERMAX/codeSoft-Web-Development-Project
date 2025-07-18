@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anurag | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .sub {
+      text-align: center;
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #ff9a00;
+      border-left: 5px solid #ff9a00;
+      padding-left: 10px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #00e0ff;
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover {
+      color: #00ffff;
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateX(5px);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    a {
+      color: #00ffea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ᴀɴᴜʀᴀɢ</h1>
+    <p class="sub">📞 9871063475 | 📍 Dwarka, Delhi</p>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I’m pursuing Diploma in Computer Science (2023–2026) from DSEU Rajokri Campus. I’m passionate about web development and dream of becoming a full-stack web developer. I believe in consistency, curiosity, and creativity in code.</p>
+    </section>
+
+    <section>
+      <h2>Passion</h2>
+      <p>🔥 Becoming a Full Stack Web Developer</p>
+    </section>
+
+    <section>
+      <h2>What Makes Me Unique?</h2>
+      <p>✨ Self-learner, creative mindset, and the courage to try what others fear. “Code it till you own it.”</p>
+    </section>
+
+    <section>
+      <h2>Qualifications</h2>
+      <ul>
+        <li>📘 Diploma in Computer Science (DSEU Rajokri Campus)</li>
+        <li>🎓 10th Passed – KV Janakpuri C-2, New Delhi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 HTML, CSS, JavaScript</li>
+        <li>🗣 English Communication</li>
+        <li>⏱ Time Management</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Internship</h2>
+      <ul>
+        <li>🛠 CodeSoft – Web Developer Intern (1 Month)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>🏐 Volleyball – 2nd Prize (Rajokri Campus)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Portfolio & Links</h2>
+      <ul>
+        <li>📂 GitHub: <a href="https://github.com/anuragchau" target="_blank">github.com/anuragchau</a></li>
+        <li>🔗 LinkedIn: <a href="https://linkedin.com/in/anurag-chaudhary" target="_blank">Anurag Chaudhary</a></li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      Made with ❤ by Anurag
+    </div>
+  </div>
+</body>
+</html>
